@@ -212,7 +212,7 @@ def update_order_status(context):
         elif order_status == "Shipped":
             order_status = "Delivered"
         
-        context.bot.send_message(chat_id=context.job.context, text="Order status updated to: {}".format(order_status))
+        #context.bot.send_message(chat_id=context.job.context, text="Order status updated to: {}".format(order_status))
         time.sleep(60)
 
 def main() -> None:
